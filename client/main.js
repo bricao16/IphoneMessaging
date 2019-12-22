@@ -23,8 +23,9 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
   var input = document.querySelector('#message');
   if(input!=null){
-  console.log(input);
   var text = input.value;
+  console.log(text);
+
   }
   socket.emit('message', text);
   
@@ -40,7 +41,10 @@ socket.on('message', function(text) {
   }
   var container = document.querySelector('section');
   var newMessage = document.createElement('p');
+  console.log(text);
   newMessage.innerText = text;
+  console.log(newMessage.innerText);
+
   container.appendChild(newMessage);
 
   var seperator = document.createElement('br');
