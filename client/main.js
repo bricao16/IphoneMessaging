@@ -21,27 +21,9 @@ form.addEventListener('submit', function(e) {
   var input = document.querySelector('#message');
   var text = input.value;
   socket.emit('message', text);
-  function shuffle(myArray) {
-    var currentIndex = myArray.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      // And swap it with the current element.
-      temporaryValue = myArray[currentIndex];
-      myArray[currentIndex] = myArray[randomIndex];
-      myArray[randomIndex] = temporaryValue;
-    }
-  
-    return myArray;
-  }
-  myArray = shuffle(myArray);
   
   input.value = '';
+  rand = myArray[Math.floor(Math.random() * myArray.length)];
 });
 
 socket.on('message', function(text) {
@@ -69,4 +51,5 @@ socket.on('message', function(text) {
   container1.appendChild(seperator1);
 
   container1.scrollTop = container1.scrollHeight;
+  rand = myArray[Math.floor(Math.random() * myArray.length)];
 });
