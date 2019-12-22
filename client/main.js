@@ -37,7 +37,7 @@ socket.on('message', function(text) {
   
       // And swap it with the current element.
       temporaryValue = myArray[currentIndex];
-      myArray[currentIndex] = array[randomIndex];
+      myArray[currentIndex] = myArray[randomIndex];
       myArray[randomIndex] = temporaryValue;
     }
   
