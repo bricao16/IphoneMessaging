@@ -3,7 +3,7 @@ var socket = io();
 var form = document.querySelector('form');
 var myArray = ['Where is the last place you would ever go?', 
 'What are you completely over and done with?', 'What memory do you just keep going back to?',
-'What’s the most immature thing your parents do?', 'Whats your name?', 'What do you enjoy doing?',
+'What’s the most immature thing your parents do?', 'What do you enjoy doing?',
 'What is the most unusual fear you have?', 'What is your favorite TV show?', 'What’s the most ridiculous argument you’ve had?'
 , 'What movie or book character are you most similar to?', 'What is your favorite movie?', 
 'What’s the scariest dream you’ve ever had?', 'What super power do you wish you had?',
