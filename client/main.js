@@ -8,7 +8,10 @@ var myArray = ['Where is the last place you would ever go?',
 , 'What movie or book character are you most similar to?', 'What is your favorite movie?', 
 'What’s the scariest dream you’ve ever had?', 'What super power do you wish you had?',
 'How was your day?', 'How are you?', 'What’s your very first memory?', 'What country do you most want to travel to?', 'Which foreign language would you like to learn?'
-
+, 'What’s the first thing you grab for in the morning?', 'Who is your biggest inspiration in life?', 'What do you think people notice most about you?',
+'Who do you hope people notice most about you?', 'What is your biggest weakness/fatal flaw?', 'What is your biggest strength?', 'What to you is the perfect, most ideal age to be?',
+'Yes or No?', ' High school. Awesome or terrible?', 'Cats or dogs?', 'Beaches or snow?', 'What is your absolute, number one, biggest pet peeve?', 'Do you believe in something after death?',
+'Favorite game to play with friends?', 'Coffee or tea?', 'Is it okay to sleep with socks on?'
 
 ];    
 
