@@ -11,6 +11,7 @@ var myArray = ['Where is the last place you would ever go?',
 
 
 ];    
+
 var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
 
@@ -20,11 +21,6 @@ form.addEventListener('submit', function(e) {
   var input = document.querySelector('#message');
   var text = input.value;
   socket.emit('message', text);
-  input.value = '';
-});
-
-socket.on('message', function(text) {
-  var randtext = rand;
   function shuffle(myArray) {
     var currentIndex = myArray.length, temporaryValue, randomIndex;
   
@@ -45,6 +41,12 @@ socket.on('message', function(text) {
   }
   myArray = shuffle(myArray);
   
+  input.value = '';
+});
+
+socket.on('message', function(text) {
+  var randtext = rand;
+
   if (!text) {
     return;
   }
