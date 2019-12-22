@@ -1,31 +1,4 @@
-body {
-  font-family: 'Helvetica Neue';
-  font-size: 20px;
-  font-weight: normal;
-}
 
-main {
-  width: 400px;
-  margin: auto;
-  margin-top: 50px;
-}
-
-section {
-  height: 300px;
-  overflow: scroll;
-  padding: 25px 25px 0 25px;
-}
-
-section br {
-  clear: both;
-}
-
-.message {
-  max-width: 250px;
-  word-wrap: break-word;
-  margin-bottom: 12px;
-  line-height: 24px;
-}
 section p:after {
   content: '';
   display: table;
@@ -402,18 +375,3 @@ a.article{
   font: 400 15px 'Open Sans', sans-serif;
 }
 
-button {
-  border: none;
-  color: #0a93f6;
-  background-color: transparent;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-input {
-  width: 100%;
-  border: solid 1px #e5e5eb;
-  border-radius: 10px;
-  padding: 5px;
-}
