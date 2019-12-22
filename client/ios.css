@@ -36,7 +36,7 @@ p {
   margin: 0px;
 }
 
-#p1:nth-of-type {
+p:nth-of-type(odd) {
   position: relative;
   padding: 10px 20px;
   color: white;
@@ -45,7 +45,7 @@ p {
   float: right;
 }
 
-#p1:nth-of-type:before {
+p:nth-of-type(odd):before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -57,7 +57,7 @@ p {
   -webkit-transform: translate(0, -2px);
 }
 
-#p1:nth-of-type:after {
+p:nth-of-type(odd):after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -70,7 +70,7 @@ p {
   -webkit-transform: translate(-30px, -2px);
 }
 
-#p2:nth-of-type {
+p:nth-of-type(even) {
   position: relative;
   padding: 10px 20px;
   background: #e5e5ea;
@@ -79,7 +79,7 @@ p {
   float: left;
 }
 
-#p2:nth-of-type:before {
+p:nth-of-type(even):before {
   content: '';
   position: absolute;
   z-index: 2;
@@ -91,7 +91,7 @@ p {
   -webkit-transform: translate(0, -2px);
 }
 
-#p2:nth-of-type:after {
+p:nth-of-type(even):after {
   content: '';
   position: absolute;
   z-index: 3;
