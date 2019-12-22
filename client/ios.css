@@ -1,9 +1,8 @@
 
 section {
-  height: 300px;
+  height: 500px;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: 25px 25px 0 25px;
 }
 
 
