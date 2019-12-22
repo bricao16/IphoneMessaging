@@ -1,7 +1,8 @@
 
 section {
   height: 300px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   padding: 25px 25px 0 25px;
 }
 
@@ -13,14 +14,10 @@ section {
   margin-bottom: 12px;
   line-height: 24px;
 }
-section p:after {
-  content: '';
-  display: table;
-  clear: both;
-}
+
 
 p {
-  margin: 0px;
+  margin: 10px;
 }
 
 p:nth-of-type(odd) {
