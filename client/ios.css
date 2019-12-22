@@ -1,15 +1,12 @@
 
 section {
-  height: 500px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  height: 300px;
+  overflow: scroll;
+  padding: 25px 25px 0 25px;
 }
 
-.messages *{
-  transition:all .5s;
-  box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
+section br {
+  clear: both;
 }
 
 .message {
@@ -18,7 +15,11 @@ section {
   margin-bottom: 12px;
   line-height: 24px;
 }
-
+section p:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 p {
   margin: 0px;
