@@ -40,7 +40,9 @@ socket.on('message', function (text) {
     var newMessage = document.createElement('p');
     newMessage.innerText = question;
     newMessage.setAttribute("id", "p2");
-
+    newMessage.rel = 'stylesheet';  
+    newMessage.type = 'text/css'; 
+    newMessage.href = 'style.css'; 
     container.appendChild(newMessage);
     var newMessage = "";
     var seperator = document.createElement('br');
