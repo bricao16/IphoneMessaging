@@ -5,30 +5,13 @@ section {
   overflow-y: scroll;
 }
 
-
-input {
-  width: 100%;
-  border: solid 1px #e5e5eb;
-  border-radius: 10px;
-  padding: 5px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-body {
-  font-family: 'Helvetica Neue';
-  font-size: 20px;
-  font-weight: normal;
-  overflow-x: hidden;
-  overflow-y: scroll;
+.messages *{
+  transition:all .5s;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
 }
 
-main {
-  width: 400px;
-  margin: auto;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin-top: 50px;
-}
 .message {
   max-width: 250px;
   word-wrap: break-word;
