@@ -1,9 +1,6 @@
 
-section p:after {
-  content: '';
-  display: table;
-  clear: both;
-}
+
+
 
 p {
   margin: 0px;
