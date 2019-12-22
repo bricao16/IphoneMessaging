@@ -12,6 +12,7 @@ form.addEventListener('submit', function (e) {
 
 socket.on('message', function (text) {
   connectCounter++;
+  console.log(connectCounter);
   if (connectCounter > 1) {
 
 
@@ -21,6 +22,8 @@ socket.on('message', function (text) {
     var container = document.querySelector('section');
     var newMessage = document.createElement('p');
     newMessage.innerText = text;
+    newMessage.setAttribute("id", "p2");
+
     container.appendChild(newMessage);
 
     var seperator = document.createElement('br');
@@ -30,16 +33,14 @@ socket.on('message', function (text) {
   }
   else {
 
-
-
-
-
     var questionNum = 0;													// keep count of question, used for IF condition.
     var question = 'what is your name?';				  // first question
 
     var container = document.querySelector('section');
     var newMessage = document.createElement('p');
     newMessage.innerText = question;
+    newMessage.setAttribute("id", "p2");
+
     container.appendChild(newMessage);
     var newMessage = "";
     var seperator = document.createElement('br');
@@ -53,8 +54,9 @@ socket.on('message', function (text) {
       console.log(message);
 
       if (questionNum == 0) {
-        newMessage = 'hello ' + message;// output response
-        newMessage.innerText = question;
+
+        newMessage.innertext = 'hello ' + message;// output response
+        newMessage.setAttribute("id", "p2");
         container.appendChild(newMessage);
         container.appendChild(seperator);
         container.scrollTop = container.scrollHeight;
@@ -65,12 +67,16 @@ socket.on('message', function (text) {
 
       else if (questionNum == 1) {
         
-        newMessage = 'That means you were born in ' + (2019 - message) + ". \nMy brother was also born in" + (2019 - message) + "." ;
+        newMessage.innertext = 'That means you were born in ' + (2019 - message) + ". \nMy brother was also born in" + (2019 - message) + "." ;
+        newMessage.setAttribute("id", "p2");
+
         container.appendChild(newMessage);
         container.appendChild(seperator);
         container.scrollTop = container.scrollHeight;
         question = 'Where are you from?';
         newMessage.innerText = question;
+        newMessage.setAttribute("id", "p2");
+
         container.appendChild(newMessage);
         container.appendChild(seperator);
         container.scrollTop = container.scrollHeight;
