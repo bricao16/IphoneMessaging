@@ -17,12 +17,13 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
   var input = document.querySelector('#message');
   var text = input.value;
-  var randtext = rand;
   socket.emit('message', text);
   input.value = '';
 });
 
 socket.on('message', function(text) {
+  var randtext = rand;
+
   if (!text) {
     return;
   }
