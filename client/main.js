@@ -21,7 +21,7 @@ var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  var input = document.querySelector('message');
+  var input = document.querySelector('#message');
   if(input!=null){
   console.log(input);
   var text = input.value;
